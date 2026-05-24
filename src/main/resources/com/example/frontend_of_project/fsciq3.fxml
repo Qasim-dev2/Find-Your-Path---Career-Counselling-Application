@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="600.0" prefWidth="800.0" style="-fx-background-image: url(&quot;https://i.pinimg.com/736x/0d/79/59/0d795966d236951951fb2d34b87ba05a.jpg&quot;); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.frontend_of_project.fsciq3Controller">
+
+    <children>
+        <VBox alignment="CENTER" layoutX="0" layoutY="0" prefHeight="600.0" prefWidth="800.0" spacing="20" styleClass="background">
+
+            <padding>
+                <Insets bottom="20" left="20" right="20" top="20" />
+            </padding>
+
+            <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="IQ Test" textFill="WHITE">
+            <font>
+               <Font size="14.0" />
+            </font></Label>
+
+            <Label fx:id="questionLabel" style="-fx-font-size: 18px;" text="Question will appear here" textFill="WHITE" wrapText="true" />
+
+            <VBox prefHeight="600.0" prefWidth="800.0" spacing="10">
+                <RadioButton fx:id="option1" text="Option 1" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></RadioButton>
+                <RadioButton fx:id="option2" text="Option 2" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></RadioButton>
+                <RadioButton fx:id="option3" text="Option 3" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></RadioButton>
+                <RadioButton fx:id="option4" text="Option 4" textFill="#f2f2f2">
+               <font>
+                  <Font size="14.0" />
+               </font></RadioButton>
+            </VBox>
+
+            <HBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0" spacing="20">
+                <Button fx:id="nextButton" onAction="#handleNextButton" text="Next Question">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            </HBox>
+
+            <Label fx:id="scoreLabel" style="-fx-font-size: 16px;" text="Score will be displayed here" textFill="#f4f4f4" />
+        </VBox>
+    </children>
+</Pane>

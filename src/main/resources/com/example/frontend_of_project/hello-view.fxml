@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.frontend_of_project.Main">
+<AnchorPane prefHeight="423.0" prefWidth="600.0" visible="false">
+   <children>
+      <Label alignment="CENTER" layoutX="95.0" prefHeight="70.0" prefWidth="388.0" text="Welcome to Career Counseling App">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Hyperlink alignment="CENTER" contentDisplay="CENTER" layoutX="213.0" layoutY="122.0" onAction="#AdminSigin" prefHeight="24.0" prefWidth="126.0" text="Admin ">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink alignment="CENTER" ellipsisString="---" layoutX="213.0" layoutY="218.0" prefHeight="24.0" prefWidth="126.0" text="User">
+         <font>
+            <Font name="System Bold Italic" size="29.0" />
+         </font>
+      </Hyperlink>
+      <Button layoutX="250.0" layoutY="325.0" mnemonicParsing="false" text="EXIT" />
+         <PasswordField />
+   </children>
+
+</AnchorPane>
+   <AnchorPane layoutX="55.0" layoutY="111.0" prefHeight="200.0" prefWidth="200.0" />
+   <Label alignment="CENTER" layoutX="137.0" layoutY="23.0" prefHeight="63.0" prefWidth="280.0" text="Welcome to Admin">
+      <font>
+         <Font size="21.0" />
+      </font>
+   </Label>
+</Pane>

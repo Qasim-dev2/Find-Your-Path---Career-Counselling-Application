@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="600.0" prefWidth="800.0" style="-fx-background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAhFBMVEUAAAD////39/cEBAT8/Pz4+Pj09PQjIyMfHx+ioqIaGhoPDw8lJSXr6+sdHR0VFRXd3d3FxcWOjo4qKiowMDCIiIhhYWGqqqra2to5OTl7e3tFRUVMTExWVlZycnJtbW25ubmYmJi0tLTQ0NBkZGSMjIx/f3+WlpY+Pj7S0tLm5uZJSUlKndobAAAIgElEQVR4nO2ciXajOgxADRhCWAI0ZGlWsrRp0///vyexeKFJCZm2cd/RndP2BAMjWbJsGRHGCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIJw8Fc4nQyR2Wz8+Yzn6eYJ2k6v06V20d8hfEqtmnilN402+5RbCnE2ydlf03AGgnNe6lFosienuaqc1ah6Hj4/StZ7ONpSgYk4CnquM+s68w2c8zcMuZOmsbbK8fVcabhE/PowmXsxky7IlSGYH75SrnHW6ePkvpmTMsjW0u12HfZryB4q/C2sFUXW5RFUMk+/UEqHTw0Pq56UdSsk3fLbDFgxfKgCXaxnw4ZFqSD+KI7baMrP2X4Gi4Es9doKcvRUo62oA6LuNfnBnNlEnfyiReG2lJz/KRV1BS0r1aaEWpFjK9CmjxD0BtR+F0FUTh7ooen6yrXP+mLAVCtOnmpOYiJ8UuX2NlcEx/5YndVTMyM1PAr57ObQVDVg0XG9GpHMjKhzMSVs6iOBrci86LzBylM6xMDlzVs9FXAcRRVzKbC76hpa0Joonsp/XODeFEKbJpxM5ETv5TfcAXRUFj/mLeCENu+1sXwudObPt0QODDhn2StTw6LNq+j8Y32kMSrIvPryUpVQjsX4ZwS9m/dGsHN94E1a4+VWa4AVV7JfDMsXRdefyo8Ok3N4vxF1Ej1jlhEXQq6kOpDLmBH2u5UMqJvuk3+P2mKcv9cH5Hq0r7NJP01N2rkRAaIZc2Ky7+9rjX9z6+27xbwf6ZM5auiw7T+4mrzZ7AdEvZOFbjGMM/W49Hrfy2EH/W5GIJKkoj4gnLT/Elp1gFuWQr+DmA3rLeClGEp3bWZ7rdsZgBDpo/os8sLz19ddQSyHzFmcCreqPwsR74sVrWFtAMu2RGLWvm/S9ts99nBELt/sIYkl6YWHh7fQ9vqHs2mNm6j57N55Q5EnHrvP/RUmjUD7akXzyWv7UjSh2JT8YtcKLOu21/ZFzK+7b5Px3xg2AtXzuxiXh2+64cP5Nw0vJBD/Kw3DcZ7n7RTSOA3FZu7ncdiZ4OV+GIR56zQxDk8/Ie4dKLG0pEcsTfIwH+RJpB8VWyDd+8i/w7bJler5MGgE7N7X9aMoTPygtTJIm9nClK3vxivdZnYQjwQ7058wD6PI9339qEi+TMnyn2t5vMYrxZrkqxk7LOPLeJwE+UgPNTLL/yGB+9NoaI2qzyK3KK5f4/hB+dePBu0msb18X/L1E8BKmdue6+G4Cf0EQo9t2+iqHgv8yj7hKICmoL5gBG6ZHxcb3A0PQoi42FQ1Q1jNuG3xjg76ZQ4W92zP8/iEhQNnDG5me6WKWFQToI1GIyeMAicsQwqcwTbvWKLB4x1LBnUz/jDsIuger9PJf5ehhQq6Hi9YxCJw1dgFdT3O3T2LkhDNEw580MV3MKb4bJxZLnaJZ1vx2mHOIIygOfJDnznJgoOGZbD65L8PY4teyUHNmI0G4GbhjIO+Lh4FfcIBS+qfUYhCR5hvua7tQhdYLt+Co0JzUjUHbO7Z0FmWUSULkWW7EOHBIh/ocyxYu2ge0JA/sRDcNAD/w79J2RyFoKILWkA/cJu7a7CxaE5WFlxbDkNTMgvk7IJQ4Ft8xyojxSA72AkOQYwZlEZSNQzYAvUAT4UfGwKU0jzHe8EQtS2/67/9RfYcxIJ/4FgoVsJ2qB3YyOZD5usa+oPEd3BKsPEKjh7JV6FoPnK3DMSeZ85OW7mJ65Uqwiqk7Hh/7GIcKYfnM6w6UfTQh7/BwPGd0pCgoocBBWMSt9FRUUOfeeWVNsQpU5ZsFeBUdjl4mnxnz8uRCAaaM5gRcdWCE1+UwAxZP4GbWBgxwc5wsbtkQQIxle0tXt3KnV/9zx6CyAaaBxVi9Y051eVCIa2giFdl+2KrlBuzC1UjnzU0Cc9Qynp14larhNw30Hkpn43PDatUkFuccSOZUll51RxSRW7ZzyxXaoxMSSsEskav2ec+KoWzV0pHHIi5Em8tOoUbs38hEbvATWKvFCvwaytMR3FmPIuLPjEnq5DI4ounZvssVgyEWzgX7Ti8WCNt4ismssKAN/nsUkrMrfSi0I5Wg/rJ083iIJQRi5GtJjYOLae1O4qfWnXE5SA0LI5WvF0wwUQT3Xu6cNkFKxaG1gjLvQuLDyoRHb0uFhr2dY2bokE+jLVTrIKZqmHgCiFlZjdpvy4TFwu5AxdtZ1r5M2JfurchvOh2QJzWWKzUdeP0kB3m50+vW5QnnE01IcOqYGGvnZDyLe7zzgySmqqiw3JLls0qG/JfvXh4TUVTeVXMtZCG2Ho3vLzGlTOMtaJqLsWK2uLsOjLmKOXw5qGGxp1iCb89r6vWw1/ZUpZWWVgublLtpcrYVgQv1JZAn/c03H25plNfhL73CfnPs1JHXIo7MpUp8Pd0f0lJN9s0Z7VUNNKI2gTILb5tyZlPilS+j8fj7KRV8quvmxr6JqKj7LWU8TFztMaSwcd6epyuP8b6YSRVuseg7UQNR6lrLyV96WULNVQZOhYdfaUGZoxvT/ccmYVZ5pRiXGClvrYGnPuUHGxqMx6W3ec+CLBirgdNbnnDG0ua0aHz19NpOzIz0EgybRmGpLvWl7Vc2X/7M+j5fUVcvLTfBQ6TP6RTi/zKl33EKb6Oj9/Ok81LZ+bnwpTSoL683J4Y8sLEDcQO8MXXolu3KhJZRr0i04e3W763pXFf455V3MbqxhQfQ++2+3ZGEs08qyvJx1aemfXYtxfbbkPOJz3fxTSObdFa5/DGdpblZa/Jo+X7FqLt7NDeI3Xn+9c/OFFcQixd3qabyQ6/pudpMV3+3QUNQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQfwc/wF9UVnexCQZrgAAAABJRU5ErkJggg==&quot;); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.frontend_of_project.fsciqController">
+
+    <children>
+        <VBox alignment="CENTER" layoutX="0" layoutY="0" prefHeight="600.0" prefWidth="800.0" spacing="20" style="-fx-background-image: url(&quot;https://i.pinimg.com/736x/0d/79/59/0d795966d236951951fb2d34b87ba05a.jpg&quot;); -fx-background-size: cover;" styleClass="background">
+
+            <padding>
+                <Insets bottom="20" left="20" right="20" top="20" />
+            </padding>
+
+            <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="IQ Test" textFill="WHITE" />
+
+            <Label fx:id="questionLabel" style="-fx-font-size: 18px;" text="Question will appear here" textFill="WHITE" wrapText="true">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+
+            <VBox prefHeight="600.0" prefWidth="800.0" spacing="10">
+                <RadioButton fx:id="option1" text="Option 1" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></RadioButton>
+                <RadioButton fx:id="option2" text="Option 2" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></RadioButton>
+                <RadioButton fx:id="option3" text="Option 3" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></RadioButton>
+                <RadioButton fx:id="option4" text="Option 4" textFill="#efefef">
+               <font>
+                  <Font size="14.0" />
+               </font></RadioButton>
+            </VBox>
+
+            <HBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0" spacing="20">
+                <Button fx:id="nextButton" onAction="#handleNextButton" text="Next Question">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            </HBox>
+
+            <Label fx:id="scoreLabel" style="-fx-font-size: 16px;" text="Score will be displayed here" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font></Label>
+        </VBox>
+    </children>
+</Pane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-image: url(&quot;https://media.istockphoto.com/id/1427944044/vector/big-five-personality-traits-infographic-has-4-types-of-personality-such-as-agreeableness.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=Si5eBFYdJ0iDAPVabkSGF0JMl-tZzOUacg3YJlLXPtg=&quot;); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.frontend_of_project.PersonalityController">
+     <!-- Question Label -->
+     <Label fx:id="questionLabel" layoutX="124.0" layoutY="173.0" prefWidth="550" text="Question will appear here" textFill="WHITE" wrapText="true">
+      <font>
+         <Font name="System Bold" size="36.0" />
+      </font>
+   </Label>
+
+     <!-- Next Button -->
+     <Button fx:id="nextButton" layoutX="346.0" layoutY="427.0" onAction="#handleNextButton" prefHeight="26.0" prefWidth="87.0" text="Next">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font>
+   </Button>
+
+     <!-- Answer ComboBox -->
+     <ComboBox fx:id="answerComboBox" layoutX="180.0" layoutY="330.0" prefHeight="34.0" prefWidth="419.0" />
+   <ListView fx:id="resultListView" layoutY="-43.0" prefHeight="54.0" prefWidth="102.0" />
+</AnchorPane>

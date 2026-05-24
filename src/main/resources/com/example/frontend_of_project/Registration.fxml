@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane1" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.frontend_of_project.Registration">
+   <AnchorPane fx:id="anchorPane2" prefHeight="600.0" prefWidth="800.0" style="-fx-background-image: url(&quot;https://t4.ftcdn.net/jpg/01/77/99/87/360_F_177998797_c712jKVPfGdKlZmVTmvwzL3nfCfRP5gs.jpg&quot;); -fx-background-size: cover;" visible="false">
+      <children>
+         <Button layoutX="308.0" layoutY="291.0" mnemonicParsing="false" onAction="#signInAfterRegistration" prefHeight="58.0" prefWidth="184.0" text="Next">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font></Button>
+         <Label alignment="CENTER" layoutX="106.0" layoutY="151.0" prefHeight="76.0" prefWidth="647.0" text="Congratulations! Your registration is completed! Now press 'Next' to sign in." textFill="WHITE">
+            <font>
+               <Font name="Arial Black" size="14.0" />
+            </font></Label>
+      </children>
+   </AnchorPane>
+   <AnchorPane fx:id="anchorpane1" prefHeight="600.0" prefWidth="800.0" style="-fx-background-image: url(&quot;https://img.freepik.com/free-photo/flat-lay-clean-office-desk_23-2148219267.jpg&quot;); -fx-background-size: cover;">
+      <children>
+         <Label alignment="CENTER" layoutX="160.0" layoutY="46.0" prefHeight="54.0" prefWidth="510.0" text="Registration Form" underline="true">
+            <font>
+               <Font name="System Bold Italic" size="36.0" />
+            </font></Label>
+         <TextField fx:id="fullname1" layoutX="86.0" layoutY="184.0" prefHeight="26.0" prefWidth="252.0" promptText="Full Name">
+            <font>
+               <Font size="14.0" />
+            </font></TextField>
+         <TextField fx:id="cnic1" layoutX="86.0" layoutY="245.0" prefHeight="26.0" prefWidth="252.0" promptText="CNIC">
+            <font>
+               <Font size="14.0" />
+            </font></TextField>
+         <TextField fx:id="email1" layoutX="86.0" layoutY="466.0" prefHeight="26.0" prefWidth="293.0" promptText="Email">
+            <font>
+               <Font size="14.0" />
+            </font></TextField>
+         <DatePicker fx:id="dateofbirth1" layoutX="86.0" layoutY="313.0" prefHeight="30.0" prefWidth="252.0" promptText="Date of Birth" />
+         <Label alignment="CENTER" layoutX="150.0" layoutY="368.0" prefHeight="26.0" prefWidth="101.0" text="Gender">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font></Label>
+         <Button fx:id="enterButton" layoutX="705.0" layoutY="536.0" mnemonicParsing="false" onAction="#fillForm" text="Enter" textFill="#150000">
+            <font>
+               <Font name="Berlin Sans FB Bold" size="18.0" />
+            </font></Button>
+         <RadioButton fx:id="male1" layoutX="102.0" layoutY="413.0" mnemonicParsing="false" text="Male">
+            <toggleGroup>
+               <ToggleGroup fx:id="genderselector" />
+            </toggleGroup>
+         </RadioButton>
+         <RadioButton fx:id="female1" layoutX="241.0" layoutY="413.0" mnemonicParsing="false" text="Female" toggleGroup="$genderselector" />
+         <DatePicker fx:id="datetest" layoutX="504.0" layoutY="247.0" prefHeight="38.0" prefWidth="252.0" />
+      </children>
+   </AnchorPane>
+</Pane>

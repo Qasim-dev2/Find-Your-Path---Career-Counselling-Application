@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="600.0" prefWidth="800.0" style="-fx-background-image: url(&quot;https://media.istockphoto.com/id/1156178759/vector/human-head-and-brain-creation-and-idea-concept.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=dDRkcnBadVH6oNVvULTIeqE-nEtwN2ADHZNI4LJ3hKQ=&quot;); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.frontend_of_project.before10Controller">
+
+    <VBox fx:id="testContainer" alignment="CENTER" layoutX="1.0" prefHeight="600.0" prefWidth="800.0" spacing="10" visible="false">
+
+        <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Before 10 Interest Based Knowledge Test" textAlignment="CENTER" />
+
+        <TextArea fx:id="questionArea" editable="false" prefHeight="100" style="-fx-font-size: 14px;" wrapText="true">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></TextArea>
+
+        <VBox alignment="CENTER_LEFT" prefHeight="600.0" prefWidth="800.0" spacing="10">
+            <RadioButton fx:id="option1" text="Option 1" />
+            <RadioButton fx:id="option2" text="Option 2" />
+            <RadioButton fx:id="option3" text="Option 3" />
+            <RadioButton fx:id="option4" text="Option 4" />
+        </VBox>
+
+        <HBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0" spacing="10">
+            <Button fx:id="nextButton" onAction="#handleNextButton" text="Next Question">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font></Button>
+            <Button fx:id="submitButton" disable="true" onAction="#finishTest" text="Submit">
+                <font>
+                    <Font name="System Bold" size="12.0" />
+                </font></Button>
+        </HBox>
+
+        <VBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0" spacing="10">
+            <Label fx:id="scoreLabel" style="-fx-font-size: 14px; -fx-font-weight: bold;" text="Your Score: ">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font></Label>
+            <Label fx:id="interestLabel" style="-fx-font-size: 14px; -fx-font-weight: bold;" text="Recommended Interest: ">
+                <font>
+                    <Font size="18.0" />
+                </font></Label>
+        </VBox>
+    </VBox>
+
+    <VBox fx:id="interestDiscoveryContainer" layoutX="1.0" prefHeight="600.0" prefWidth="800.0">
+
+        <Label alignment="CENTER" prefHeight="30.0" prefWidth="764.0" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Discover Your Interest" textAlignment="CENTER" />
+
+        <Label style="-fx-font-size: 14px;" text="Select the activities you enjoy:" />
+
+        <VBox alignment="CENTER_LEFT" prefHeight="184.0" prefWidth="800.0" spacing="10">
+            <Label style="-fx-font-weight: bold;" text="Science Interests:">
+                <font>
+                    <Font size="14.0" />
+                </font></Label>
+            <CheckBox fx:id="fictionCheckBox" contentDisplay="CENTER" prefHeight="18.0" prefWidth="822.0" text="Enjoy studying Fictions">
+                <font>
+                    <Font size="14.0" />
+                </font></CheckBox>
+            <CheckBox fx:id="chemicalreactioncheckbox" mnemonicParsing="false" prefHeight="19.0" prefWidth="452.0" text="Curious about how chemical react (compounds , elements)">
+                <font>
+                    <Font size="13.0" />
+                </font></CheckBox>
+            <CheckBox fx:id="machinesCheckBox" text="Curious about how things work (machines, engines)">
+                <font>
+                    <Font size="14.0" />
+                </font></CheckBox>
+            <CheckBox fx:id="experimentsCheckBox" text="Enjoy conducting experiments">
+                <font>
+                    <Font size="14.0" />
+                </font></CheckBox>
+            <CheckBox fx:id="universecheckbox" mnemonicParsing="false" prefHeight="20.0" prefWidth="424.0" text="Curious about universe (Galaxies , blackhole , planets).">
+                <font>
+                    <Font size="14.0" />
+                </font></CheckBox>
+        </VBox>
+
+        <VBox alignment="CENTER_LEFT" prefHeight="145.0" prefWidth="800.0" spacing="10">
+            <Label style="-fx-font-weight: bold;" text="Arts Interests:">
+                <font>
+                    <Font size="14.0" />
+                </font></Label>
+            <CheckBox fx:id="drawingCheckBox" text="Enjoy drawing, painting, or creating art">
+                <font>
+                    <Font size="14.0" />
+                </font></CheckBox>
+            <CheckBox fx:id="literatureCheckBox" text="Interested in literature, poetry, or storytelling">
+                <font>
+                    <Font size="14.0" />
+                </font></CheckBox>
+            <CheckBox fx:id="performingCheckBox" text="Enjoy music, acting, or performing">
+                <font>
+                    <Font size="14.0" />
+                </font></CheckBox>
+        </VBox>
+
+        <VBox alignment="CENTER_LEFT" prefHeight="154.0" prefWidth="800.0" spacing="10">
+            <Label prefHeight="31.0" prefWidth="598.0" style="-fx-font-weight: bold;" text="Computer Interests:">
+                <font>
+                    <Font size="14.0" />
+                </font></Label>
+            <CheckBox fx:id="videogamesCheckBox" prefHeight="17.0" prefWidth="245.0" text="Enjoy playing or designing video games">
+                <font>
+                    <Font size="14.0" />
+                </font></CheckBox>
+            <CheckBox fx:id="softwareCheckBox" prefHeight="17.0" prefWidth="259.0" text="Curious about how software and apps work">
+                <font>
+                    <Font size="14.0" />
+                </font></CheckBox>
+            <CheckBox fx:id="codingCheckBox" text="Enjoy working with gadgets or coding">
+                <font>
+                    <Font size="14.0" />
+                </font></CheckBox>
+            <CheckBox fx:id="aicheckbox" mnemonicParsing="false" prefHeight="17.0" prefWidth="201.0" text="Interested in A.I  !">
+                <font>
+                    <Font size="14.0" />
+                </font></CheckBox>
+
+            <Button fx:id="discoverButton" onAction="#handleDiscoverInterest" prefHeight="26.0" prefWidth="804.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" text="Discover My Interest" textFill="#130606">
+                <font>
+                    <Font name="System Bold Italic" size="12.0" />
+                </font></Button>
+        </VBox>
+
+        <Label fx:id="resultLabel" alignment="CENTER" prefHeight="26.0" prefWidth="804.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+        <Button fx:id="back" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="189.0" text="Back to Main Menu" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+
+
+
+
+
+
+    </VBox>
+    <AnchorPane fx:id="fieldselectionanchorpane" layoutX="1.0" layoutY="3.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-image: url(&quot;https://media.licdn.com/dms/image/v2/C5612AQGXpNtyqTD9NA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1520042886906?e=2147483647&amp;v=beta&amp;t=SxJKBm0GvZxAjWmObwZnZFFGHLEelrz24nUsTjLy3ls&quot;); -fx-background-size: cover;" visible="false">
+        <children>
+            <RadioButton fx:id="scienceradiobutton" layoutX="77.0" layoutY="180.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="173.0" text="Science" textFill="WHITE">
+                <toggleGroup>
+                    <ToggleGroup fx:id="fieldselector" />
+                </toggleGroup>
+                <font>
+                    <Font name="System Bold Italic" size="14.0" />
+                </font>
+            </RadioButton>
+            <RadioButton fx:id="artsradiobutton" layoutX="77.0" layoutY="280.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="142.0" text="Arts" textFill="WHITE" toggleGroup="$fieldselector">
+                <font>
+                    <Font name="System Bold Italic" size="14.0" />
+                </font></RadioButton>
+            <RadioButton fx:id="computorradiobutton" layoutX="77.0" layoutY="381.0" mnemonicParsing="false" text="Computor" textFill="WHITE" toggleGroup="$fieldselector">
+                <font>
+                    <Font name="System Bold Italic" size="14.0" />
+                </font></RadioButton>
+            <Label alignment="CENTER" prefHeight="100.0" prefWidth="800.0" text="Now You Should Select Your Field . That U Think Better Suits ur Interest and Knowledge" textFill="#faf8f8">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font></Label>
+            <Button fx:id="fieldsubmit" layoutX="370.0" layoutY="521.0" mnemonicParsing="false" onAction="#fieldswitchsubmit" prefHeight="25.0" prefWidth="79.0" text="Submit">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font></Button>
+        </children>
+    </AnchorPane>
+    <AnchorPane fx:id="againtestanchorpane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-image: url(&quot;https://img.freepik.com/premium-photo/school-drawing-images-background-copy-space_1179130-582579.jpg?semt=ais_hybrid&quot;); -fx-background-size: cover;" visible="false">
+        <children>
+            <Hyperlink fx:id="reconduct" layoutX="320.0" layoutY="243.0" onAction="#testReconduct" prefHeight="62.0" prefWidth="114.0" text="Reconduct">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font></Hyperlink>
+            <Hyperlink fx:id="fieldswitch" layoutX="321.0" layoutY="408.0" onAction="#testReconduct" text="Field Switch">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font></Hyperlink>
+            <Label alignment="CENTER" layoutX="146.0" layoutY="102.0" prefHeight="50.0" prefWidth="506.0" text="Now you Have Two Options Choose one of them Wisely" underline="true">
+                <font>
+                    <Font name="System Bold Italic" size="18.0" />
+                </font>
+            </Label>
+            <Label layoutX="49.0" layoutY="201.0" text="1. Choose this Option when u are Stasfied with our Interest Calculating Criteria But Unfortunately Failed to Pass Test ">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font>
+            </Label>
+            <Label layoutX="44.0" layoutY="342.0" text="2. Choose this Option when u want to Priotrize Ur Personal Interest and Test Ur Knowlege according to That">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font>
+            </Label>
+            <Label fx:id="againTest" layoutX="67.0" layoutY="39.0" prefHeight="35.0" prefWidth="498.0">
+                <font>
+                    <Font name="System Bold Italic" size="14.0" />
+                </font>
+            </Label>
+        </children>
+    </AnchorPane>
+   <AnchorPane fx:id="exitanchorpane" prefHeight="600.0" prefWidth="769.0" visible="false">
+      <children>
+         <Button layoutX="350.0" layoutY="375.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+      </children>
+   </AnchorPane>
+</Pane>
