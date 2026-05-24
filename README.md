@@ -4,6 +4,10 @@
 
 A JavaFX-based Career Counseling Application designed to guide students in choosing suitable career paths based on their interests, skills, and academic preferences through an interactive and user-friendly desktop interface.
 
+### Main Application Interface
+
+![Main Application](Demo%20Images/WhatsApp%20Image%202026-04-28%20at%2010.14.06%20AM.jpeg)
+
 ---
 
 ## 👥 Target Audience
@@ -149,13 +153,29 @@ src/
 
 ## 🎨 Gallery & Screenshots
 
-### Splash Screen
-The application features an attractive splash screen that welcomes users upon startup:
+### Splash & Welcome Screen
+![Splash Screen 1](Demo%20Images/WhatsApp%20Image%202026-04-28%20at%2010.13.17%20AM.jpeg)
+![Splash Screen 2](Demo%20Images/WhatsApp%20Image%202026-04-28%20at%2010.13.28%20AM.jpeg)
 
-![Splash Screen](src/main/resources/com/example/frontend_of_project/Images/splash.png)
+### Registration & Login Interface
+![Registration Page](Demo%20Images/WhatsApp%20Image%202026-04-28%20at%2010.13.39%20AM.jpeg)
+![Login Interface](Demo%20Images/WhatsApp%20Image%202026-04-28%20at%2010.13.57%20AM.jpeg)
 
-### Application Interface
-The main interface provides an intuitive and user-friendly experience for students to navigate through various assessments and career recommendations.
+### Main Menu & Navigation
+![Main Menu](Demo%20Images/WhatsApp%20Image%202026-04-28%20at%2010.14.15%20AM.jpeg)
+![Menu Options](Demo%20Images/WhatsApp%20Image%202026-04-28%20at%2010.14.24%20AM.jpeg)
+
+### Assessment Tests
+![IQ Test Interface](Demo%20Images/WhatsApp%20Image%202026-04-28%20at%2010.14.32%20AM.jpeg)
+![Personality Test](Demo%20Images/WhatsApp%20Image%202026-04-28%20at%2010.14.40%20AM.jpeg)
+
+### Results & Recommendations
+![Test Results](Demo%20Images/WhatsApp%20Image%202026-04-28%20at%2010.15.18%20AM.jpeg)
+![Career Recommendations](Demo%20Images/WhatsApp%20Image%202026-04-28%20at%2010.15.47%20AM.jpeg)
+
+### Student Dashboard
+![Student Dashboard](Demo%20Images/WhatsApp%20Image%202026-04-28%20at%2010.15.58%20AM.jpeg)
+![Additional Features](Demo%20Images/WhatsApp%20Image%202026-04-28%20at%2010.16.10%20AM.jpeg)
 
 ---
 
